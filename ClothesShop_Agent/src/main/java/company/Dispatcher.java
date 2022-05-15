@@ -22,7 +22,7 @@ public class Dispatcher
         return dispatcher;
     }
 
-    public synchronized static void send(Message message)
+    public synchronized void send(Message message)
     {
         String sender = Thread.currentThread().getName();
         message.setSender(sender);

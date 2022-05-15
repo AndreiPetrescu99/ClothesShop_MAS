@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da5ad022-2d2e-45c0-b50b-486c4208ccc6" name="Changes" comment="" />
+    <list default="true" id="da5ad022-2d2e-45c0-b50b-486c4208ccc6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Agent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Cashier.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Cashier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Details.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Details.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Dispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Dispatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleCustomerQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleCustomerQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleMessages.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleMessages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/States.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/States.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/company/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/company/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/company/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Dispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/company/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Scheduler.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +33,26 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29Cy0x5ZPZPo5x085J3HV0rGyyz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,6 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652631142930</updated>
       <workItem from="1652631144008" duration="3697000" />
+      <workItem from="1652635296895" duration="761000" />
     </task>
     <servers />
   </component>

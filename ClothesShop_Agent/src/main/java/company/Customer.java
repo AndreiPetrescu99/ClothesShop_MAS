@@ -36,6 +36,7 @@ public class Customer extends Agent
             Message message = new Message();
             message.setReceiver("Scheduler");
             message.setMessage(new Details(getName(), current_client_state));
+            dispatcher.send(message);
 
             //waiting for cashier to be free
             Message reply = dispatcher.receive();
@@ -59,7 +60,7 @@ public class Customer extends Agent
             //leaving
             current_client_state = States.SERVED;
             products = 0;
-            System.out.println(current_client_state + "Bye!");
+            System.out.println(getName()+ " I was " + current_client_state + " Bye!");
             Thread.sleep(5000);
         }
     }

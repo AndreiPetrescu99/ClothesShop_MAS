@@ -1,13 +1,16 @@
 package company;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class Scheduler extends Agent
 {
     //adding details of the customer & cashier
-    Queue<Details> customers_queue;
+    BlockingQueue<Details> customers_queue;
     public Map<String, States> cashiers_state;
 
     public Scheduler(String name)
@@ -20,12 +23,12 @@ public class Scheduler extends Agent
     {
         System.out.println("Scheduler ON");
         //o structura care implementeaza Queue
-        customers_queue = new LinkedList<>();
+        customers_queue = new LinkedBlockingQueue<>();
+        cashiers_state = new HashMap<>();
     }
 
     private synchronized String selectCashier()
     {
-        Details details = null;
 
         for(String key:cashiers_state.keySet())
         {
@@ -53,11 +56,17 @@ public class Scheduler extends Agent
                     Details customer = customers_queue.remove();
 
                     String cashier = selectCashier();
-
                     while (cashier == null)
                     {
                         cashier = selectCashier();
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
+
+                    //System.out.println("Found a free cashier");
 
                     Message message = new Message();
                     //casierul primeste mesaj ca o sa aiba un client
@@ -71,7 +80,20 @@ public class Scheduler extends Agent
 
     private synchronized void updateCustomerQueue(Details customer)
     {
+        //System.out.println("Updating queue");
         customers_queue.add(customer);
+    }
+
+    private synchronized void updateCashier(String cashier, States state){
+
+        if (cashiers_state.containsKey(cashier))
+        {
+            cashiers_state.replace(cashier, state);
+        }
+        else
+        {
+            cashiers_state.put(cashier, state);
+        }
     }
 
     private class HandleMessages extends Thread
@@ -93,28 +115,16 @@ public class Scheduler extends Agent
                         String msgStr = (String)  msg.getMessage();
                         String sender = msg.getSender();
 
-                        if (msgStr.equals("free"))
+                        if (msgStr.contains("free"))
                         {
+                            //System.out.println(sender + " e FREE");
                             //verifica daca avem in Map daca avem casier
-                            if (cashiers_state.containsKey(sender))
-                            {
-                                cashiers_state.replace(sender, States.FREE);
-                            }
-                            else
-                            {
-                                cashiers_state.put(sender, States.FREE);
-                            }
+                            updateCashier(sender, States.FREE);
                         }
                         else
                         {
-                            if (cashiers_state.containsKey(sender))
-                            {
-                                cashiers_state.replace(sender, States.BUSY);
-                            }
-                            else
-                            {
-                                cashiers_state.put(sender, States.BUSY);
-                            }
+                            //System.out.println(sender + " e BUSY");
+                            updateCashier(sender, States.BUSY);
                         }
                     }
                     else

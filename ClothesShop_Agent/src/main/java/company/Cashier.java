@@ -36,8 +36,15 @@ public class Cashier extends Agent
                 reply = dispatcher.receive();
             }
 
+            //Trebuie anuntat Scheduleru ca acu e busy
+            message.setReceiver("Scheduler");
+            message.setMessage("busy");
+            dispatcher.send(message);
+
             //serveste clientul
-            String client_name = (String) reply.getMessage();
+            Details client_details = (Details) reply.getMessage();
+            String client_name = client_details.getId();
+            System.out.println("Serving " + client_name);
             Thread.sleep(5000);
 
             //trebuie schimbata starea clientului
