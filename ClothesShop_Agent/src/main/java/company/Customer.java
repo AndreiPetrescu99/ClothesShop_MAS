@@ -45,13 +45,15 @@ public class Customer extends Agent
                 reply = dispatcher.receive();
             }
 
+            System.out.println(getName()+ " I am being served by " + reply.getSender());
+
             //cashier is free now
             //cum imi dau seama ca e free?
             current_client_state = States.IN_PROGRESS;
             products = getRandomNumber(1,5);
             message.setReceiver("Scheduler");
             message.setMessage(new Details(getName(), current_client_state));
-            dispatcher.send(message);
+            //dispatcher.send(message);
             System.out.println("Number of products in the basket:" + products);
 
             //paying

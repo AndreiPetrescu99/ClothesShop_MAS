@@ -44,7 +44,7 @@ public class Cashier extends Agent
             //serveste clientul
             Details client_details = (Details) reply.getMessage();
             String client_name = client_details.getId();
-            System.out.println("Serving " + client_name);
+            System.out.println(getName() + ": serving " + client_name);
             Thread.sleep(5000);
 
             //trebuie schimbata starea clientului

@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da5ad022-2d2e-45c0-b50b-486c4208ccc6" name="Changes" comment="">
+    <list default="true" id="da5ad022-2d2e-45c0-b50b-486c4208ccc6" name="Changes" comment="Fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Agent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Cashier.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Cashier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Details.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Details.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Dispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Dispatcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Message.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleCustomerQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleCustomerQueue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleMessages.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler$HandleMessages.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/Scheduler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/company/States.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/company/States.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/company/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Cashier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/company/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/company/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Dispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/company/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/company/Scheduler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +84,34 @@
       <option name="presentableId" value="Default" />
       <updated>1652631142930</updated>
       <workItem from="1652631144008" duration="3697000" />
-      <workItem from="1652635296895" duration="761000" />
+      <workItem from="1652635296895" duration="2260000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed">
+      <created>1652636095421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652636095421</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed" />
   </component>
 </project>
